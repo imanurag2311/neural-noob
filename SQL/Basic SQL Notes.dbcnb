@@ -1,0 +1,248 @@
+cells:
+  - kind: 1
+    languageId: markdown
+    value: "## Brief About Database\r
+
+      \r
+
+      - Database is any collection of related information\r
+
+      - Computer are great for storing databases\r
+
+      - Database Management Systems (DBMS) make it easy to create, maintain and
+      secure a database.\r
+
+      - DBMS allow you to perform the C.R.U.D operations and other
+      administrative tasks\r
+
+      - Two types of Databases, Relational & Non-Relational\r
+
+      - Relational databases use SQL and store data in tables with rows and
+      columns\r
+
+      - Non-Relational data store data using other data structures"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "## Keys\r
+
+      #### Primary Key\r
+
+      - Cannot contain NULL values.\r
+
+      - Each table can have only one primary key.\r
+
+      - Often used as the main reference point for other tables.\r
+
+      #### Foreign Key\r
+
+      - Establishes a link between two tables.\r
+
+      - Refers to the primary key in another table.\r
+
+      - foreign key column can contain NULL values.\r
+
+      - Ensures referential integrity by restricting actions that would break
+      the link.\r
+
+      #### Candidate Key\r
+
+      - A column (or set of columns) that can uniquely identify a record.\r
+
+      - Every candidate key is eligible to become a primary key.\r
+
+      - A table can have multiple candidate keys, but only one is chosen as the
+      primary key.\r
+
+      - A candidate key cannot contain NULLs.\r
+
+      #### Composite Key\r
+
+      - A key made up of two or more columns that together uniquely identify a
+      record.\r
+
+      - Used when no single column is sufficient to uniquely identify rows.\r
+
+      #### Alternate Key\r
+
+      - Candidate keys that were not chosen as the primary key.\r
+
+      - Still unique and can be used for lookups or constraints.\r
+
+      #### Unique Key\r
+
+      - Ensures that all values in a column (or group of columns) are
+      distinct.\r
+
+      - Unlike primary keys, can contain NULLs (but only one NULL per column in
+      most databases).\r
+
+      - A table can have multiple unique keys.\r
+
+      #### Super Key\r
+
+      - Any combination of columns that uniquely identifies a row.\r
+
+      - All candidate keys are super keys\r
+
+      - But not all super keys are candidate keys"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "## Keywords\r
+
+      These keywords are added at the end of the line, `e.g: name VARCHAR(30)
+      UNIQUE`\r
+
+      - NULL\r
+
+      - NOT NULL\r
+
+      - UNIQUE\r
+
+      - DEFAULT  ` format:- DEFAULT 'whatever default value' ` \r
+
+      example: for Secton: DEFAULT 'CSE-7'\r
+
+      - AUTO INCREMENT (`AUTO_INCREMENT`): It will increment number
+      automtically. E.g: Serial Number \r
+
+      - DISTINCT\r
+
+      - DELIMITER:- Use for changing statement delimiter to any symbols\r
+
+      \r
+
+      \r
+
+      \r
+
+      EXTRA \r
+
+      - MODIFY: Used to change the data type or constraints of existing
+      columns.\r
+
+      `MODIFY column_name new_data_type [constraints]`\r
+
+      - ADD: Used to add new columns.\r
+
+      ` ALTER TABLE table_name new_column_name type [constraints]`\r
+
+      \r
+
+      - Use `DROP TABLE IF EXISTS`, to delete the existing table if it is
+      there\r
+
+      - Use `TRUNCATE TABLE table_name;` to Remove all rows but keep the
+      structure table\r
+
+      \r\n"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "### REPLACE VS UPDATE\r
+
+      REPLACE\r
+
+      - Inserts a new row or replaces an existing one.\r
+
+      - If a row with the same primary key exists, it deletes it and inserts the
+      new row.\r
+
+      - Can lead to loss of data not included in the new row.\r
+
+      \r
+
+      UPDATE\r
+
+      - Modifies existing rows based on a condition.\r
+
+      - Keeps all other column values unchanged unless specified\r\n"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "#### NOTE\r
+
+      - \"%\" = any # characters, \"_\" = one character. Can say it is like
+      filter or matching characters\r
+
+      \r\n"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "## JOIN\r
+
+      #### LEFT JOIN (or LEFT OUTER JOIN)\r
+
+      - Returns all rows from the left table.\r
+
+      - Returns matching rows from the right table.\r
+
+      - If there’s no match, `NULL` is returned for right table columns.\r
+
+      \r
+
+      #### RIGHT JOIN (or RIGHT OUTER JOIN)\r
+
+      - Returns all rows from the right table.\r
+
+      - Returns matching rows from the left table.\r
+
+      - If there’s no match, `NULL` is returned for left table columns.\r
+
+      \r
+
+      #### FULL OUTER JOIN\r
+
+      - Returns all rows from both tables.\r
+
+      - Matches rows where possible.\r
+
+      - If there’s no match, `NULL` is returned for the missing side."
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "### Rules of UNION\r
+
+      - Each SELECT must have the same number of columns.\r
+
+      - The columns must have compatible data types.\r
+
+      - The order of columns must match across all SELECT statements.\r
+
+      - The column names in the result are taken from the first SELECT.\r
+
+      - UNION removes duplicates, UNION ALL keeps duplicates.\r
+
+      - Only one ORDER BY is allowed, and it must be placed after the last
+      SELECT"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "#### ON DELETE SET NULL\r
+
+      - When a referenced row in the parent table is deleted → the foreign key
+      in the child table is `set to NULL`.\r
+
+      - Child rows remain in the table, but their foreign key no longer points
+      to anything.\r
+
+      - Works only if the foreign key column is nullable.\r
+
+      \r
+
+      #### ON DELETE CASCADE\r
+
+      - When a referenced `row in the parent table is deleted` → the child rows
+      are automatically deleted.\r
+
+      - Ensures referential integrity by removing dependent records.\r
+
+      - Useful when child data is meaningless without the parent."
+    metadata: {}
+metadata:
+  conn:
+    id: dEaPpvqnTZD6Vk2GXl4T1
+    name: DSML_Practice
+  database: dsml_practice
+  schema: ""

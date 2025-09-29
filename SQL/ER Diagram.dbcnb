@@ -1,0 +1,49 @@
+cells:
+  - kind: 1
+    languageId: markdown
+    value: "## ER DIAGRAM"
+    metadata: {}
+  - kind: 1
+    languageId: markdown
+    value: "### Important terms in ER Diagram\r
+
+      - Entity - An object we want to model & store information about\r
+
+      - Attributes - Specific pieces of information about an entity\r
+
+      - Primary Key - An attribute(s) that uniquely identify an entry in the
+      database table\r
+
+      - Composite Attribute - An attribute that can be broken up into
+      sub-attributes\r
+
+      - Multi-valued Attribute - An attribute that can have more than one
+      value\r
+
+      - Derived Attribute - An attribute that can be derived from the other
+      attributes\r
+
+      - Multiple Entities - You can define more than one entity in the diagram\r
+
+      - Relationships - defines a relationship between two entities\r
+
+      - Total Participation - All members must participate in the relationship\r
+
+      - Relationship Attribute - An attribute about the relationship\r
+
+      - Relationship Cardinality - the number of instances of an entity from a
+      relation that can be associated with the relation. It can be 1:1, 1:N,
+      N:M\r
+
+      - Weak Entity - An entity that cannot be uniquely identified by its
+      attributes alone\r
+
+      - Identifying relationship - A relationship that serves to uniquly
+      identify the weak entity\r\n"
+    metadata: {}
+metadata:
+  conn:
+    id: dEaPpvqnTZD6Vk2GXl4T1
+    name: DSML_Practice
+  database: dsml_practice
+  schema: ""
